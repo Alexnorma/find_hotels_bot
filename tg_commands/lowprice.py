@@ -21,8 +21,21 @@ def get_distination(city):
 		if i['group'] != "CITY_GROUP":
 			continue
 		for k in i['entities']:
-			if lower(k["name"] == city:
+			if k["name"] == str(city):
 				return str(k['destinationId'])
+
+
+def need_result(result):
+
+	data = result["data"]
+	body = data["body"]
+	search = body['searchResults']
+	res = search['results']
+	list_results = []
+	for count in range(1):
+		list_results.append(res[count])
+	return list_results
+
 
 
 def list_hotels_by_destination(city):
@@ -37,11 +50,11 @@ def list_hotels_by_destination(city):
 
 	response = requests.request("GET", url, headers=headers, params=querystring)
 	result = json.loads(response.text)
-	print(result)
-
+	a = need_result(result)
+	return a
 
 
 
 #
 # with open('new.json','w') as file:
-# 	json.dump(result, file, indent=4)
+# 	json.dump(list_hotels_by_destination('New York'), file, indent=4

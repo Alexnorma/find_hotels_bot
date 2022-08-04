@@ -1,4 +1,5 @@
 from tg_commands import lowprice
+import telebot
 
 
 # Создаем экземпляр бота
@@ -15,8 +16,8 @@ def send_welcome(message):
 # Функция, обрабатывающая команду /lowprice
 @bot.message_handler(commands=['lowprice'])
 def send_welcome(message):
-    list= list_hotels_by_destination('New York')
-    bot.reply_to(message, 'Это первое сообщеlние бота в ответ на команду lowprice ')
+    list_hotels= lowprice.list_hotels_by_destination('New York')
+    bot.reply_to(message, f'Это первое сообщеlние бота в ответ на команду {list_hotels}')
 
 
 # Функция, обрабатывающая команду /highprice
