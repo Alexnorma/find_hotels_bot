@@ -1,81 +1,5 @@
 [
     {
-        "id": 634418464,
-        "name": "31 Street Broadway Hotel",
-        "starRating": 2.0,
-        "urls": {},
-        "address": {
-            "streetAddress": "38 West 31st Street",
-            "extendedAddress": "",
-            "locality": "New York",
-            "postalCode": "10001",
-            "region": "NY",
-            "countryName": "United States",
-            "countryCode": "us",
-            "obfuscate": false
-        },
-        "welcomeRewards": {
-            "collect": true
-        },
-        "guestReviews": {
-            "unformattedRating": 5.2,
-            "rating": "5.2",
-            "total": 523,
-            "scale": 10
-        },
-        "landmarks": [
-            {
-                "label": "City center",
-                "distance": "0.7 miles"
-            },
-            {
-                "label": "Times Square",
-                "distance": "0.7 miles"
-            }
-        ],
-        "geoBullets": [],
-        "ratePlan": {
-            "price": {
-                "current": "$56",
-                "exactCurrent": 56.1,
-                "old": "$62",
-                "info": "nightly price per unit",
-                "additionalInfo": "This is the average nightly price for your dates.",
-                "fullyBundledPricePerStay": "total $698 for 6&nbsp;nights"
-            },
-            "features": {
-                "freeCancellation": false,
-                "paymentPreference": false,
-                "noCCRequired": false
-            },
-            "type": "EC"
-        },
-        "neighbourhood": "NoMad",
-        "deals": {
-            "secretPrice": {
-                "dealText": "Save more with Secret Prices"
-            },
-            "priceReasoning": "DRR-443"
-        },
-        "messaging": {
-            "scarcity": "1 left on our app"
-        },
-        "badging": {},
-        "pimmsAttributes": "DoubleStamps|D13|TESCO",
-        "coordinate": {
-            "lat": 40.74725,
-            "lon": -73.98776
-        },
-        "roomsLeft": 1,
-        "providerType": "LOCAL",
-        "supplierHotelId": 19794327,
-        "vrBadge": "Condo Hotel",
-        "isAlternative": false,
-        "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/fec711f6_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
-        }
-    },
-    {
         "id": 453028,
         "name": "NY Moore Hostel",
         "starRating": 2.0,
@@ -114,14 +38,14 @@
         "geoBullets": [],
         "ratePlan": {
             "price": {
-                "current": "$56",
-                "exactCurrent": 56.33,
+                "current": "$60",
+                "exactCurrent": 60.0,
                 "info": "nightly price per room",
                 "additionalInfo": "This is the average nightly price for your dates.",
-                "fullyBundledPricePerStay": "total $413 for 6&nbsp;nights"
+                "fullyBundledPricePerStay": "total $366 for 5&nbsp;nights"
             },
             "features": {
-                "freeCancellation": false,
+                "freeCancellation": true,
                 "paymentPreference": false,
                 "noCCRequired": false
             },
@@ -129,233 +53,20 @@
         },
         "neighbourhood": "East Williamsburg",
         "deals": {},
-        "messaging": {},
+        "messaging": {
+            "scarcity": "2 left on our app"
+        },
         "badging": {},
         "coordinate": {
             "lat": 40.704175,
             "lon": -73.937509
         },
+        "roomsLeft": 2,
         "providerType": "LOCAL",
         "supplierHotelId": 7803456,
         "isAlternative": false,
         "optimizedThumbUrls": {
             "srpDesktop": "https://exp.cdn-hotels.com/hotels/8000000/7810000/7803500/7803456/a0a638cb_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
-        }
-    },
-    {
-        "id": 425346,
-        "name": "Bowery Grand Hotel",
-        "starRating": 1.0,
-        "urls": {},
-        "address": {
-            "streetAddress": "143 Bowery",
-            "extendedAddress": "",
-            "locality": "New York",
-            "postalCode": "10002",
-            "region": "NY",
-            "countryName": "United States",
-            "countryCode": "us",
-            "obfuscate": false
-        },
-        "welcomeRewards": {
-            "collect": true
-        },
-        "guestReviews": {
-            "unformattedRating": 4.4,
-            "rating": "4.4",
-            "total": 994,
-            "scale": 10
-        },
-        "landmarks": [
-            {
-                "label": "City center",
-                "distance": "2.6 miles"
-            },
-            {
-                "label": "Times Square",
-                "distance": "2.7 miles"
-            }
-        ],
-        "geoBullets": [],
-        "ratePlan": {
-            "price": {
-                "current": "$62",
-                "exactCurrent": 61.8,
-                "old": "$69",
-                "info": "nightly price per room",
-                "additionalInfo": "This is the average nightly price for your dates.",
-                "fullyBundledPricePerStay": "total $447 for 6&nbsp;nights"
-            },
-            "features": {
-                "freeCancellation": false,
-                "paymentPreference": true,
-                "noCCRequired": false
-            },
-            "type": "Dual"
-        },
-        "neighbourhood": "Bowery",
-        "deals": {
-            "secretPrice": {
-                "dealText": "Save more with Secret Prices"
-            },
-            "priceReasoning": "DRR-443"
-        },
-        "messaging": {},
-        "badging": {},
-        "pimmsAttributes": "DoubleStamps|D13|TESCO",
-        "coordinate": {
-            "lat": 40.719014,
-            "lon": -73.994535
-        },
-        "providerType": "LOCAL",
-        "supplierHotelId": 5660562,
-        "isAlternative": false,
-        "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/6000000/5670000/5660600/5660562/94633c51_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
-        }
-    },
-    {
-        "id": 482976,
-        "name": "The Local",
-        "starRating": 2.0,
-        "urls": {},
-        "address": {
-            "streetAddress": "13-02 44th Avenue",
-            "extendedAddress": "",
-            "locality": "Long Island City",
-            "postalCode": "11101",
-            "region": "NY",
-            "countryName": "United States",
-            "countryCode": "us",
-            "obfuscate": false
-        },
-        "welcomeRewards": {
-            "collect": true
-        },
-        "guestReviews": {
-            "unformattedRating": 8.6,
-            "rating": "8.6",
-            "total": 619,
-            "scale": 10,
-            "badge": "fabulous",
-            "badgeText": "Fabulous"
-        },
-        "landmarks": [
-            {
-                "label": "City center",
-                "distance": "2.1 miles"
-            },
-            {
-                "label": "Times Square",
-                "distance": "2.1 miles"
-            }
-        ],
-        "geoBullets": [],
-        "ratePlan": {
-            "price": {
-                "current": "$62",
-                "exactCurrent": 62.16,
-                "info": "nightly price per room",
-                "additionalInfo": "This is the average nightly price for your dates.",
-                "fullyBundledPricePerStay": "total $449 for 6&nbsp;nights"
-            },
-            "features": {
-                "freeCancellation": false,
-                "paymentPreference": false,
-                "noCCRequired": false
-            },
-            "type": "EC"
-        },
-        "neighbourhood": "Hunters Point",
-        "deals": {},
-        "messaging": {
-            "scarcity": "4 left on our app"
-        },
-        "badging": {},
-        "pimmsAttributes": "DoubleStamps|D13|TESCO",
-        "coordinate": {
-            "lat": 40.749691,
-            "lon": -73.947624
-        },
-        "roomsLeft": 4,
-        "providerType": "LOCAL",
-        "supplierHotelId": 9554294,
-        "isAlternative": false,
-        "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/10000000/9560000/9554300/9554294/e3525abb_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
-        }
-    },
-    {
-        "id": 513116,
-        "name": "HI New York City",
-        "starRating": 2.0,
-        "urls": {},
-        "address": {
-            "streetAddress": "891 Amsterdam Avenue",
-            "extendedAddress": "",
-            "locality": "New York",
-            "postalCode": "10025",
-            "region": "NY",
-            "countryName": "United States",
-            "countryCode": "us",
-            "obfuscate": false
-        },
-        "welcomeRewards": {
-            "collect": true
-        },
-        "guestReviews": {
-            "unformattedRating": 8.4,
-            "rating": "8.4",
-            "total": 828,
-            "scale": 10,
-            "badge": "very-good",
-            "badgeText": "Very Good"
-        },
-        "landmarks": [
-            {
-                "label": "City center",
-                "distance": "3.1 miles"
-            },
-            {
-                "label": "Times Square",
-                "distance": "3.0 miles"
-            }
-        ],
-        "geoBullets": [],
-        "ratePlan": {
-            "price": {
-                "current": "$64",
-                "exactCurrent": 63.56,
-                "old": "$68",
-                "info": "nightly price per room",
-                "additionalInfo": "This is the average nightly price for your dates.",
-                "fullyBundledPricePerStay": "total $381 for 6&nbsp;nights"
-            },
-            "features": {
-                "freeCancellation": false,
-                "paymentPreference": false,
-                "noCCRequired": false
-            },
-            "type": "HC"
-        },
-        "neighbourhood": "Manhattan Valley",
-        "deals": {
-            "specialDeal": {
-                "dealText": "Mobile exclusive: save 10% (on select nights)"
-            },
-            "priceReasoning": "DRR-444"
-        },
-        "messaging": {},
-        "badging": {},
-        "coordinate": {
-            "lat": 40.798712,
-            "lon": -73.96696
-        },
-        "providerType": "LOCAL",
-        "supplierHotelId": 10052731,
-        "isAlternative": false,
-        "optimizedThumbUrls": {
-            "srpDesktop": "https://exp.cdn-hotels.com/hotels/11000000/10060000/10052800/10052731/471fb897_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
         }
     }
 ]
