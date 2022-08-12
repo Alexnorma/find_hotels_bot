@@ -15,17 +15,17 @@ def get_distination(city):
 
 	response = requests.request("GET", url, headers=headers, params=querystring)
 	result = json.loads(response.text)
-
-	for i in result["suggestions"]:
-		if not isinstance(i, dict):
-			continue
-		if i['group'] != "CITY_GROUP":
-			continue
-		for k in i['entities']:
-			if k["name"] == str(city):
-				destination_id = str(k['destinationId'])
-				return destination_id
-
+	# list_destinations = {}
+	# for i in result["suggestions"]:
+	# 	if not isinstance(i, dict):
+	# 		continue
+	# 	for k in i['entities']:
+	# 		for caption in k["caption"].split(','):
+	# 			if caption.strip(' ') == city:
+	# 				if k["name"] not in list_destinations.keys():
+	# 					list_destinations[k["name"]] = k["destinationId"]
+	return result
+print(get_distination('New York'))
 
 def need_result(result):
 
@@ -42,7 +42,8 @@ def need_result(result):
 def list_hotels_by_destination(city):
 	url = "https://hotels4.p.rapidapi.com/properties/list"
 	querystring = {"destinationId": get_distination(city), "pageNumber":"1"
-		,"pageSize":"25","checkIn":'2022-08-10',"checkOut":'2022-08-15',"adults1":"1","sortOrder":"PRICE","locale":"en_US","currency":"USD"}
+		,"pageSize": "25", "checkIn":'2022-08-10', "checkOut": '2022-08-15', "adults1": "1", "sortOrder": "PRICE"
+		, "locale":"en_US", "currency": "USD"}
 
 	headers = {
 		"X-RapidAPI-Key": "8ad1568503msh9882a45583ee7a3p1a3cb6jsn2334ba5af675",
