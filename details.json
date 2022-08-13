@@ -1,0 +1,3164 @@
+{
+    "result": "OK",
+    "data": {
+        "body": {
+            "pdpHeader": {
+                "hotelId": "634418464",
+                "destinationId": "1506246",
+                "pointOfSaleId": "HCOM_US",
+                "currencyCode": "USD",
+                "occupancyKey": "A1",
+                "hotelLocation": {
+                    "coordinates": {
+                        "latitude": 40.74725,
+                        "longitude": -73.98776
+                    },
+                    "resolvedLocation": "CITY:1506246:PROVIDED:PROVIDED",
+                    "locationName": "New York"
+                }
+            },
+            "overview": {
+                "overviewSections": [
+                    {
+                        "title": "Main amenities",
+                        "type": "HOTEL_FEATURE",
+                        "content": [
+                            "28 smoke-free apartments",
+                            "Housekeeping once per stay",
+                            "WiFi in the lobby",
+                            "Room service",
+                            "24-hour front desk",
+                            "Air conditioning",
+                            "Self-serve laundry",
+                            "Luggage storage",
+                            "TV in a common area"
+                        ],
+                        "contentType": "LIST"
+                    },
+                    {
+                        "title": "What\u2019s around",
+                        "type": "LOCATION_SECTION",
+                        "content": [
+                            "In Manhattan",
+                            "5th Avenue - 1 min walk",
+                            "Empire State Building - 5 min walk",
+                            "Madison Square Garden - 7 min walk",
+                            "Bryant Park - 10 min walk",
+                            "Times Square - 12 min walk",
+                            "Broadway - 15 min walk",
+                            "Grand Central Terminal - 17 min walk",
+                            "Radio City Music Hall - 20 min walk",
+                            "St. Patrick's Cathedral - 21 min walk",
+                            "Rockefeller Center - 22 min walk"
+                        ],
+                        "contentType": "LIST"
+                    },
+                    {
+                        "type": "TAGLINE",
+                        "content": [
+                            "<b>Walking distance from Empire State Building </b>"
+                        ],
+                        "contentType": "LIST"
+                    }
+                ]
+            },
+            "hotelWelcomeRewards": {
+                "applies": true,
+                "info": "For every 10 stamps, get 1 reward* night!"
+            },
+            "propertyDescription": {
+                "clientToken": "rYyeiJFxrDiWM-qeGUViqEs8aXU.",
+                "address": {
+                    "countryName": "United States of America",
+                    "cityName": "New York",
+                    "postalCode": "10001",
+                    "provinceName": "NY",
+                    "addressLine1": "38 West 31st Street",
+                    "countryCode": "USA",
+                    "pattern": "AddressLine1,#AddressLine2,#CityName,#ProvinceName,#PostalCode,#CountryName",
+                    "fullAddress": "38 West 31st Street, New York, NY, 10001, United States of America"
+                },
+                "priceMatchEnabled": true,
+                "name": "31 Street Broadway Hotel",
+                "starRatingTitle": "2 stars",
+                "starRating": 2.0,
+                "featuredPrice": {
+                    "pricingTooltip": "This is the average nightly price for your dates.",
+                    "currentPrice": {
+                        "formatted": "$80",
+                        "plain": 80.0
+                    },
+                    "oldPrice": "$89",
+                    "priceInfo": "nightly price per unit",
+                    "taxInclusiveFormatting": false,
+                    "offer": {
+                        "label": "Your Secret Price",
+                        "text": "Save more with Secret Prices",
+                        "promoType": "secret-price",
+                        "promoId": "443"
+                    },
+                    "bookNowButton": true,
+                    "fullyBundledPricePerStay": "total $407 for 2&nbsp;nights"
+                },
+                "mapWidget": {
+                    "staticMapUrl": "https://maps-api-ssl.google.com/maps/api/staticmap?center=40.74725,-73.98776&format=jpg&sensor=false&key=AIzaSyDaDqDNrxWrxcURixO2l6TbtV68X0Klf4U&zoom=16&size=834x443&scale&signature&signature=hoaQwrpUYijVhK62rlUVkTsLi7s="
+                },
+                "roomTypeNames": [
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (820)",
+                    "Private Apartment, common Bathroom (630)",
+                    "Studio, Private Bathroom (443)",
+                    "Studio, Private Apartment (409)",
+                    "Private Royal Studio with a Private bathroom (632)",
+                    "Studio, Private Bathroom (623)",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (525)",
+                    "Studio, Kitchenette",
+                    "Private Room, Kitchenette, common Bathroom (815)",
+                    "Private Apartment, common Bathroom  (219)",
+                    "Private Apartment, Shared Bathroom (541) ",
+                    "Private Royal Studio with a Private bathroom (508)",
+                    "Private Apartment, common Bathroom (615)",
+                    "Private Royal Studio with a Private Bathroom (524)",
+                    "Studio, Private Bathroom (311)",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (212)",
+                    "Private Apartment, Shared Bathroom (741)",
+                    "Private Apartment, common Bathroom (712)",
+                    "Private Apartment, Shared Bathroom (727) ",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (526)",
+                    "Studio, Private Bathroom (408)",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (522)",
+                    "Studio, Private apartment (211)",
+                    "Private Royal Studio with a Private bathroom (640)",
+                    "Private Apartment, Shared Bathroom (676)",
+                    "Studio, Private Bathroom (721)",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (413)",
+                    "Apartment, Shared Bathroom (826)",
+                    "Studio, Kitchenette (207)",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (813)",
+                    "Studio, Kitchenette (1103)",
+                    "Studio, Private Bathroom (728)",
+                    "Apartment With Shared Bathroom (513)",
+                    "Room, Shared Bathroom (529)",
+                    "Private Apartment, common Bathroom (818)",
+                    "Basic Apartment, Accessible, Shared Bathroom",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (517)",
+                    "Private Apartment, common Bathroom (744)",
+                    "Private Apartment, Common Bathroom (217) ",
+                    "Private Apartment, common Bathroom (724)",
+                    "Studio, Private Bathroom (1008)",
+                    "Studio, Private Bathroom (706)",
+                    "Private Apartment, common Bathroom (213) ",
+                    "Studio, Private Bathroom (1006)",
+                    "Private Apartment, Common Bathroom (512)",
+                    "Private Royal Studio with a Private bathroom (308)",
+                    "Studio, Kitchenette",
+                    "Studio,Private Apartment with Kitchenette (536)",
+                    "Private Royal Studio with a Private bathroom (829)",
+                    "Room, Shared Bathroom (619)",
+                    "Comfort Apartment, Common Bathroom, Kitchenette (823) ",
+                    "Private Room, Kitchenette, common Bathroom (428)",
+                    "Private Comfort Apartment, Kitchenette, common Bathroom (528)",
+                    "Apartment, Shared Bathroom (819)",
+                    "Private Apartment, common Bathroom (418)",
+                    "Room, Shared Bathroom (519)",
+                    "Studio, Private Bathroom (409)",
+                    "Private Apartment, common Bathroom (816)",
+                    "Studio, Private Bathroom (1108)",
+                    "Studio, Private Bathroom (862)",
+                    "Comfort Apartment, Common Bathroom, Kitchenette (717)",
+                    "Comfort Apartment, Shared Bathroom (218) ",
+                    "Apartment With Shared Bathroom (719)",
+                    "Studio, Private bathroom (235)",
+                    "Private Apartment, common bathroom (628)"
+                ],
+                "tagline": [
+                    "<b>Walking distance from Empire State Building </b>"
+                ],
+                "freebies": []
+            },
+            "guestReviews": {
+                "brands": {
+                    "scale": 10.0,
+                    "formattedScale": "10",
+                    "rating": 5.2,
+                    "formattedRating": "5.2",
+                    "lowRating": false,
+                    "total": 524
+                }
+            },
+            "atAGlance": {
+                "keyFacts": {
+                    "hotelSize": [
+                        "28 apartments",
+                        "Arranged over "
+                    ],
+                    "arrivingLeaving": [
+                        "Check-in time 4:00 PM-2:00 AM",
+                        "Check-out time is  10:00 AM"
+                    ],
+                    "specialCheckInInstructions": [
+                        "Front desk staff will greet guests on arrival. "
+                    ],
+                    "requiredAtCheckIn": [
+                        "Credit card, debit card, or cash deposit required for incidental charges",
+                        "Government-issued photo ID may be required",
+                        "Minimum check-in age is 17"
+                    ]
+                },
+                "travellingOrInternet": {
+                    "travelling": {
+                        "children": [
+                            "No cribs (infant beds)"
+                        ],
+                        "pets": [
+                            "Pets allowed*"
+                        ],
+                        "extraPeople": []
+                    },
+                    "internet": [
+                        "WiFi in public areas*",
+                        "WiFi in rooms*"
+                    ]
+                },
+                "transportAndOther": {
+                    "transport": {
+                        "transfers": [],
+                        "parking": [
+                            "No onsite parking"
+                        ],
+                        "offsiteTransfer": []
+                    },
+                    "otherInformation": [
+                        "Smoke-free property"
+                    ],
+                    "otherInclusions": []
+                }
+            },
+            "amenities": [
+                {
+                    "heading": "At the aparthotel",
+                    "listItems": [
+                        {
+                            "heading": "Food and drink",
+                            "listItems": [
+                                "Room service (during limited hours)"
+                            ]
+                        },
+                        {
+                            "heading": "Services",
+                            "listItems": [
+                                "24-hour front desk",
+                                "Laundry facilities",
+                                "Luggage storage"
+                            ]
+                        },
+                        {
+                            "heading": "Facilities",
+                            "listItems": [
+                                "Number of buildings/towers -  0",
+                                "Elevator",
+                                "Television in common areas"
+                            ]
+                        },
+                        {
+                            "heading": "Languages Spoken",
+                            "listItems": [
+                                "Arabic",
+                                "English",
+                                "French",
+                                "German",
+                                "Korean",
+                                "Portuguese",
+                                "Russian",
+                                "Spanish",
+                                "Vietnamese"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "heading": "In the apartment",
+                    "listItems": [
+                        {
+                            "heading": "Home comforts",
+                            "listItems": [
+                                "Air conditioning",
+                                "Washer/dryer"
+                            ]
+                        },
+                        {
+                            "heading": "Freshen up",
+                            "listItems": [
+                                "Free toiletries"
+                            ]
+                        },
+                        {
+                            "heading": "Be entertained",
+                            "listItems": [
+                                "Flat-screen TV",
+                                "Cable TV channels"
+                            ]
+                        },
+                        {
+                            "heading": "Stay connected",
+                            "listItems": [
+                                "WiFi (surcharge)"
+                            ]
+                        },
+                        {
+                            "heading": "Food and drink",
+                            "listItems": [
+                                "Refrigerator",
+                                "Microwave",
+                                "Kitchenette"
+                            ]
+                        },
+                        {
+                            "heading": "More",
+                            "listItems": [
+                                "Housekeeping - once per stay"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "hygieneAndCleanliness": {
+                "title": "COVID-19: Hygiene and cleanliness",
+                "healthAndSafetyMeasures": {
+                    "title": "Enhanced health and safety measures",
+                    "description": "This property advises that enhanced cleaning and guest safety measures are currently in place.",
+                    "measures": [
+                        "Property is cleaned with disinfectant",
+                        "Property confirms they are implementing enhanced cleaning measures",
+                        "Property uses a professional cleaning service"
+                    ]
+                }
+            },
+            "smallPrint": {
+                "alternativeNames": [
+                    "Grand NYC Apartment New York",
+                    "The Grand NYC",
+                    "1234 Broadway Avenue",
+                    "31 Street Broadway New York",
+                    "31 Street Broadway Hotel New York",
+                    "Grand NYC Apartment",
+                    "31 Street Broadway Hotel Aparthotel",
+                    "31 Street Broadway Hotel Aparthotel New York",
+                    "Grand NYC New York",
+                    "Grand NYC"
+                ],
+                "mandatoryFees": [
+                    "<ul><li>A tax is imposed by the city: USD 3.5 per accommodation, per night</li><li>12 percent destination fee will be charged</li></ul>",
+                    "<p>Pet deposit: USD 0 per stay</p>"
+                ],
+                "optionalExtras": [
+                    "<p><strong>Early check-in</strong> can be arranged for an extra charge of USD 60 (subject to availability)</p><p><strong>Late check-out</strong> can be arranged for an extra charge of USD 50 (subject to availability)</p>",
+                    "<p><strong>Pets</strong> are allowed for an extra charge of USD 40 per pet, per stay</p>",
+                    "<p><strong>WiFi</strong> is available in guestrooms for USD 5 per day (rates may vary)</p><p><strong>WiFi</strong> is available in public areas for USD 5 per day (rates may vary)</p>"
+                ],
+                "policies": [
+                    "<p>Guests can rest easy knowing there's a smoke detector on site.</p><p>This property advises that enhanced cleaning and guest safety measures are currently in place.</p><p>The property is professionally cleaned; disinfectant is used to clean the property; commonly-touched surfaces are cleaned with disinfectant between stays; bed sheets and towels are laundered at a temperature of at least 60\u00b0C/140\u00b0F.</p>"
+                ],
+                "mandatoryTaxesOrFees": true,
+                "display": true
+            },
+            "roomsAndRates": {
+                "bookingUrl": "https://www.hotels.com/bookingInitialise.do",
+                "rooms": [
+                    {
+                        "name": "Private Room, Kitchenette, common Bathroom (815)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/acedab99_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/acedab99_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/482e2e9d_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/482e2e9d_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/454cdaab_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/454cdaab_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/f76e0441_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/f76e0441_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchenette",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/1ba47d12_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/1ba47d12_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 1,
+                            "total": 2,
+                            "messageChildren": "(including up to 1 child)",
+                            "messageTotal": "Sleeps 2 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bed</strong></p><p>97 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 2,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$80",
+                                    "unformattedCurrent": 80.0,
+                                    "old": "$89",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$80",
+                                                "oldValue": "$89"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$160",
+                                                "oldValue": "$178"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $407 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "0",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "211534798",
+                                                    "roomTypeCode": "202248893",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..RH1vcxQDJBo.",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Comfort Apartment, Kitchenette, common Bathroom (820)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/a9a9ca87_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/a9a9ca87_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/844aee3f_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/844aee3f_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/ae4c42cf_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/ae4c42cf_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/7653434b_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/7653434b_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/f9e3ea79_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/f9e3ea79_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bed and 1 Twin Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 2,
+                            "total": 3,
+                            "messageChildren": "(including up to 2 children)",
+                            "messageTotal": "Sleeps 3 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bed and 1 Twin Bed</strong></p><p>151 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 3,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$101",
+                                    "unformattedCurrent": 101.0,
+                                    "old": "$112",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$101",
+                                                "oldValue": "$112"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$202",
+                                                "oldValue": "$224"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $468 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "1",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "211471138",
+                                                    "roomTypeCode": "202240831",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..46YsjqxE3tM4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Apartment, common Bathroom (418)",
+                        "images": [
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/59b8a117_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/59b8a117_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/c542ab6f_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/c542ab6f_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e739e435_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e739e435_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e6e009f7_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e6e009f7_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 2,
+                            "total": 3,
+                            "messageChildren": "(including up to 2 children)",
+                            "messageTotal": "Sleeps 3 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>118-sq-foot room with city views </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 3,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$101",
+                                    "unformattedCurrent": 101.0,
+                                    "old": "$112",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$101",
+                                                "oldValue": "$112"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$202",
+                                                "oldValue": "$224"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $468 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "2",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "211535097",
+                                                    "roomTypeCode": "202248914",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..46YsjqxE3tM4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Apartment, common bathroom (628)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/ebb1d486_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/ebb1d486_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/85686120_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/85686120_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5550c1cc_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5550c1cc_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/8afcae5e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/8afcae5e_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/18e68f89_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/18e68f89_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 2,
+                            "total": 3,
+                            "messageChildren": "(including up to 2 children)",
+                            "messageTotal": "Sleeps 3 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>120 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 3,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$101",
+                                    "unformattedCurrent": 101.0,
+                                    "old": "$112",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$101",
+                                                "oldValue": "$112"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$202",
+                                                "oldValue": "$224"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $468 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "3",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "288098058",
+                                                    "roomTypeCode": "220227704",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..46YsjqxE3tM4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Comfort Apartment, Kitchenette, common Bathroom (522)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/59620123_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/59620123_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/b4fdb82e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/b4fdb82e_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/77f47aee_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/77f47aee_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d10b97ae_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d10b97ae_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchenette",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/581ec38e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/581ec38e_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>96 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "4",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "211507505",
+                                                    "roomTypeCode": "202246011",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Comfort Apartment, Kitchenette, common Bathroom (413)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5aed77c6_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5aed77c6_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2b674d15_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2b674d15_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/41ca7549_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/41ca7549_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5751418e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5751418e_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e49b707c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e49b707c_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/00ec1ba4_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/00ec1ba4_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/7c0c65d2_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/7c0c65d2_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/24ea7c81_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/24ea7c81_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>118-sq-foot room with city views </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "5",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "211533343",
+                                                    "roomTypeCode": "202248846",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Apartment, common Bathroom (744)",
+                        "images": [
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/6db26aad_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/6db26aad_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2f5d8088_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2f5d8088_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d779846a_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d779846a_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e8c783e9_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e8c783e9_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/a52bd6d1_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/a52bd6d1_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "2 Double Beds"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>2 Double Beds</strong></p><p>151 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "6",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "211535321",
+                                                    "roomTypeCode": "202248947",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Apartment, Shared Bathroom (727) ",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d77a3e65_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d77a3e65_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/56f5b8cf_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/56f5b8cf_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2a3590eb_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2a3590eb_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cb190346_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cb190346_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/c30aade2_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/c30aade2_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchenette",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/64576fe9_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/64576fe9_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>96 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "7",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "288001159",
+                                                    "roomTypeCode": "220200488",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Private Apartment, common Bathroom  (219)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/b98b75e5_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/b98b75e5_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2c342adb_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2c342adb_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d562a8ef_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d562a8ef_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/8f023b91_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/8f023b91_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/20a03c03_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/20a03c03_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>140-sq-foot room with city views </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "8",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "288046412",
+                                                    "roomTypeCode": "220213874",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Comfort Apartment, Shared Bathroom (218) ",
+                        "images": [
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/dcf5cb5f_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/dcf5cb5f_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/fe61d5f2_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/fe61d5f2_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e25f0d52_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e25f0d52_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/9c509d7f_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/9c509d7f_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/35cd8bee_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/35cd8bee_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/705e164c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/705e164c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/dc85dc59_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/dc85dc59_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/e1bfa286_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p>118 sq feet </p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Shared bathroom, in-room sink, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, no rollaway/extra beds available, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "9",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "288126869",
+                                                    "roomTypeCode": "220231118",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Apartment With Shared Bathroom (719)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/23e247c4_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/23e247c4_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5b2ca958_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5b2ca958_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/9a5e7fb1_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/9a5e7fb1_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/f8d6d3d0_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/f8d6d3d0_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/80101a5b_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/80101a5b_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/ac9a2df6_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/ac9a2df6_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90-f125d18c_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "2 Double Beds"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>2 Double Beds</strong></p><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Free toiletries and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$132",
+                                    "unformattedCurrent": 132.0,
+                                    "old": "$147",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$132",
+                                                "oldValue": "$147"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$265",
+                                                "oldValue": "$294"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $562 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "10",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "382180424",
+                                                    "roomTypeCode": "314078693",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..PE90GzutgF04YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Studio,Private Apartment with Kitchenette (536)",
+                        "images": [
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5c0938ad_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/5c0938ad_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/9a283b77_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/9a283b77_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/104e88d2_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/104e88d2_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/1ba32fa4_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/1ba32fa4_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Private bathroom, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$150",
+                                    "unformattedCurrent": 150.0,
+                                    "old": "$167",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$150",
+                                                "oldValue": "$167"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$301",
+                                                "oldValue": "$334"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $615 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "11",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "380930559",
+                                                    "roomTypeCode": "314024815",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..2wPswox61UY4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Studio, Private bathroom (235)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d2395494_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/d2395494_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/08b91b3e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/08b91b3e_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 3,
+                            "total": 4,
+                            "messageChildren": "(including up to 3 children)",
+                            "messageTotal": "Sleeps 4 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Free toiletries and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 4,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$150",
+                                    "unformattedCurrent": 150.0,
+                                    "old": "$167",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$150",
+                                                "oldValue": "$167"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$301",
+                                                "oldValue": "$334"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $615 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "12",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "383691106",
+                                                    "roomTypeCode": "315460173",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..2wPswox61UY4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Studio, Kitchenette (207)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/0328050d_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/0328050d_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 4,
+                            "total": 5,
+                            "messageChildren": "(including up to 4 children)",
+                            "messageTotal": "Sleeps 5 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed</strong></p><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Free toiletries and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 5,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$159",
+                                    "unformattedCurrent": 159.0,
+                                    "old": "$177",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$159",
+                                                "oldValue": "$177"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$319",
+                                                "oldValue": "$354"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $641 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "13",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "385873966",
+                                                    "roomTypeCode": "315905730",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..VM_a97PWXSI4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Studio, Private Bathroom (1008)",
+                        "images": [
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cb7dc812_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cb7dc812_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/c17e6e18_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/c17e6e18_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2ef77144_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/2ef77144_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cd07563e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cd07563e_b.jpg"
+                            },
+                            {
+                                "caption": "Bathroom",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/56a174fe_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/56a174fe_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "1 Double Bunk Bed and 1 Twin Bed"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 4,
+                            "total": 5,
+                            "messageChildren": "(including up to 4 children)",
+                            "messageTotal": "Sleeps 5 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>1 Double Bunk Bed and 1 Twin Bed</strong></p><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Free toiletries and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 5,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$159",
+                                    "unformattedCurrent": 159.0,
+                                    "old": "$177",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$159",
+                                                "oldValue": "$177"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$319",
+                                                "oldValue": "$354"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $641 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "14",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "385873968",
+                                                    "roomTypeCode": "315535093",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..VM_a97PWXSI4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Studio, Private Bathroom (443)",
+                        "images": [
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/feefffcc_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/feefffcc_b.jpg"
+                            },
+                            {
+                                "caption": "Primary image",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90e737bc_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/90e737bc_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/3a191b0f_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/3a191b0f_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/28e968ce_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/28e968ce_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/22ea881e_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/22ea881e_b.jpg"
+                            },
+                            {
+                                "caption": "Room",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/b8521c9f_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/b8521c9f_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cbcf432c_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/cbcf432c_b.jpg"
+                            },
+                            {
+                                "caption": "Private kitchen",
+                                "thumbnailUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/023984d9_e.jpg",
+                                "fullSizeUrl": "https://exp.cdn-hotels.com/hotels/20000000/19800000/19794400/19794327/023984d9_b.jpg"
+                            }
+                        ],
+                        "bedChoices": {
+                            "mainOptions": [
+                                "3 Double Beds"
+                            ],
+                            "extraBedTypes": []
+                        },
+                        "maxOccupancy": {
+                            "children": 5,
+                            "total": 6,
+                            "messageChildren": "(including up to 5 children)",
+                            "messageTotal": "Sleeps 6 people"
+                        },
+                        "additionalInfo": {
+                            "description": "<p><strong>3 Double Beds</strong></p><p>Overlooking the courtyard</p><br/><p><b>Internet</b> - WiFi </p><p><b>Entertainment</b> - Flat-screen TV with cable channels</p><p><b>Food & Drink</b> - Kitchenette with refrigerator and microwave</p><p><b>Bathroom</b> - Private bathroom, free toiletries, and towels</p><p><b>Practical</b> - Washer/dryer</p><p><b>Comfort</b> - Air conditioning</p><p><b>Need to Know</b> - Limited housekeeping, toothbrush and toothpaste not available</p><p>Non-Smoking, pet friendly</p>",
+                            "details": {
+                                "amenities": [
+                                    "Air conditioning",
+                                    "Cable TV service",
+                                    "Cleaning supplies",
+                                    "Flat-panel TV",
+                                    "Free toiletries",
+                                    "Housekeeping - once per stay",
+                                    "Kitchenette",
+                                    "Microwave",
+                                    "Refrigerator",
+                                    "Room service (limited hours)",
+                                    "Television",
+                                    "Towels provided",
+                                    "Washer/dryer",
+                                    "WiFi (surcharge)"
+                                ]
+                            }
+                        },
+                        "ratePlans": [
+                            {
+                                "occupancy": {
+                                    "maxAdults": 6,
+                                    "maxChildren": 0
+                                },
+                                "cancellation": {
+                                    "title": "Non-refundable",
+                                    "free": false,
+                                    "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                    "refundable": false
+                                },
+                                "cancellations": [
+                                    {
+                                        "title": "Non-refundable",
+                                        "free": false,
+                                        "info": "If you change or cancel your booking you will not get a refund or credit to use for a future stay. This policy will apply regardless of COVID-19, subject to any local consumer laws.",
+                                        "period": "09/01/22 - 09/03/22 for 2 nights",
+                                        "refundable": false
+                                    }
+                                ],
+                                "features": [],
+                                "welcomeRewards": {
+                                    "info": "Our loyalty program lets you collect 10 stamps and get 1 reward* night. And you can redeem reward* nights with this room.",
+                                    "collect": true,
+                                    "redeem": true
+                                },
+                                "offers": {
+                                    "offer": {
+                                        "text": "Save more with Secret Prices",
+                                        "promoType": "secret-price",
+                                        "promoId": "443"
+                                    },
+                                    "valueAdds": []
+                                },
+                                "price": {
+                                    "current": "$206",
+                                    "unformattedCurrent": 206.0,
+                                    "old": "$229",
+                                    "info": "nightly price per unit",
+                                    "nightlyPriceBreakdown": {
+                                        "additionalColumns": [
+                                            {
+                                                "heading": "(Average)",
+                                                "value": "$206",
+                                                "oldValue": "$229"
+                                            },
+                                            {
+                                                "heading": "for 2 nights",
+                                                "value": "$412",
+                                                "oldValue": "$458"
+                                            }
+                                        ],
+                                        "nightlyPrices": []
+                                    },
+                                    "fullyBundledPricePerStay": "total $780 for 2&nbsp;nights"
+                                },
+                                "payment": {
+                                    "book": {
+                                        "caption": "Let\u2019s book",
+                                        "bookingParamsMixedRatePlan": {
+                                            "init": true,
+                                            "bookingApiVersion": "v3",
+                                            "numberOfRoomType": "15",
+                                            "orderItems": [
+                                                {
+                                                    "supplierType": "EXPEDIA",
+                                                    "rateCode": "288392184",
+                                                    "roomTypeCode": "232256850",
+                                                    "businessModel": "MERCHANT",
+                                                    "ratePlanConfiguration": "REGULAR",
+                                                    "arrivalDate": "09/01/22",
+                                                    "departureDate": "09/03/22",
+                                                    "destinationId": "1506246",
+                                                    "hotelCityId": "1506246",
+                                                    "hotelId": "634418464",
+                                                    "sequenceNumber": "0",
+                                                    "tripId": "",
+                                                    "tspid": 24.0
+                                                }
+                                            ],
+                                            "propertyDetailsDisplayRate": "c..CKKS8YcnRIc4YqiPtGUVfQ..",
+                                            "currency": "USD",
+                                            "minPrice": "c..RH1vcxQDJBo.",
+                                            "marketingChannelCode": "20",
+                                            "interstitial": "",
+                                            "priceConfigurationId": "22"
+                                        }
+                                    },
+                                    "noCCRequired": false
+                                },
+                                "ratePlanDetails": {
+                                    "hideInstallments": false,
+                                    "localCurrencySuppression": false
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "ratePlanWithOffersExists": true,
+                "priceColumnHeading": "Average nightly price per unit"
+            },
+            "specialFeatures": {
+                "sections": []
+            },
+            "miscellaneous": {
+                "pimmsAttributes": "DoubleStamps|D13|TESCO",
+                "showLegalInfoForStrikethroughPrices": true,
+                "legalInfoForStrikethroughPrices": "The struck-out price is based on the property\u2019s standard rate on our app, as determined and supplied by the property."
+            },
+            "pageInfo": {
+                "pageType": "dateful",
+                "errors": [],
+                "errorKeys": []
+            },
+            "unavailable": {}
+        },
+        "common": {
+            "pointOfSale": {
+                "numberSeparators": ",.",
+                "brandName": "Hotels.com"
+            },
+            "tracking": {
+                "omniture": {
+                    "s.prop34": "2022.06.949",
+                    "s.eVar69": "Mob :: aApp",
+                    "s.currencyCode": "USD",
+                    "s.eVar26": "US:MI:COLOMA:588",
+                    "s.eVar16": "Mob :: aApp",
+                    "s.products": "LOCAL;19794327",
+                    "s.eVar29": "Mob :: aApp",
+                    "s.eVar40": "D=v0",
+                    "s.eVar95": "Unknown",
+                    "s.eVar41": "USD",
+                    "s.eVar31": "D=v0",
+                    "s.eVar4": "|SI:anonymous|VS:returnVisitor|HCR:notApplicable|FC:notApplicable|NS:unknown|TI:notApplicable|SM:notApplicable|IR:anonymous|",
+                    "s.eVar43": "en_US|HCOM_US|www.hotels.com",
+                    "s.eVar32": "D=v0",
+                    "s.eVar34": "H1068:005.001,H1871:007.002,M4869:001.000,M4953:001.000,M5277:001.000,M5342:000.000,M5756:001.000,M5758:001.000,M5759:001.000,M5760:001.000,M6271:001.000,M6370:004.001,M6439:000.000,M6553:000.000,M6946:000.000,M7015.1,M7145:000.000,M7296:000.000,M7305:000.000,M7308:000.000,M7353:000.000,M7362.0,M7385:000.000,M7395:000.000,M7635:000.000,M7765.2,M7983:000.000,M7990:000.000,M8073:000.000,M8248:000.000,M8336:000.000,M8400:000.000,M8763:000.000,M9035:000.000,M9043.1,M9056:000.000,M9167:000.000,M9168:000.000,M9469:000.000,M9475:000.000,M9493:000.000,M9565:000.000,M9567.1,M9585:013.002,M9588:000.000,M9629:000.000,M9699:004.001,M9733:007.001,M9771:000.000,M9863:000.000,M9890:000.000,M9914:000.000,M9924:000.000,M9930:000.000,M9974:000.000,M10013:002.001,M10025:000.000,M10049:000.000,M10057:000.000,M10086:000.000,M10101:000.000,M10291:000.000,M10326:000.000,M10335:000.000,M10473:000.000,M10500:005.001,M10517:000.000,M9215:001.001",
+                    "s.eVar13": "389367",
+                    "s.server": "www.hotels.com",
+                    "s.prop28": "0",
+                    "s.prop27": "e1ff4e9a-31e6-48e9-a7d9-4a841d363405",
+                    "s.prop5": "389367",
+                    "s.eVar80": "",
+                    "s.prop48": "hotel details page description tab",
+                    "s.prop36": "|SI:anonymous|VS:returnVisitor|HCR:notApplicable|FC:notApplicable|NS:unknown|TI:notApplicable|SM:notApplicable|IR:anonymous|",
+                    "s.eVar93": "aws.us-east-1.unknown"
+                },
+                "pageViewBeaconUrl": "/taps/v1/PageView?deviceType=App-Phone&rooms=1&destRegionID=1506246&hotelIds=&adults=1&userAgent=PDE.4.1.440&userGuid=e1ff4e9a-31e6-48e9-a7d9-4a841d363405&pageName=Hotel-IS&slots=HIS_Car_A,HIS_Car_B,HIS_Car_C,HIS_Car_D,HIS_Car_E,HIS_Car_F,HIS_Car_G,HIS_Car_H,HIS_Car_I,HIS_Car_J&checkIn=2022-09-01&children=0&culture=en_US&testVersionOverride=4200.0,7983.0,7561.0,7990.0,8434.0,9493.0,10473.0,9083.0&domain=www.hotels.com&action=pageview&publisher=expedia&userIP=98.222.149.58&checkOut=2022-09-03&programId=1"
+            }
+        }
+    },
+    "transportation": {
+        "transportLocations": [
+            {
+                "category": "airport",
+                "locations": [
+                    {
+                        "name": "John F. Kennedy Intl. Airport (JFK) -",
+                        "distance": "",
+                        "distanceInTime": "46 min drive"
+                    },
+                    {
+                        "name": "Newark Liberty Intl. Airport (EWR) -",
+                        "distance": "",
+                        "distanceInTime": "35 min drive"
+                    },
+                    {
+                        "name": "LaGuardia Airport (LGA) -",
+                        "distance": "",
+                        "distanceInTime": "30 min drive"
+                    },
+                    {
+                        "name": "New York, NY (NYS-Skyports Seaplane Base) -",
+                        "distance": "",
+                        "distanceInTime": "10 min drive"
+                    },
+                    {
+                        "name": "Teterboro, NJ (TEB) -",
+                        "distance": "",
+                        "distanceInTime": "15 min drive"
+                    },
+                    {
+                        "name": "Linden, NJ (LDJ) -",
+                        "distance": "",
+                        "distanceInTime": "26 min drive"
+                    }
+                ]
+            },
+            {
+                "category": "train-station",
+                "locations": [
+                    {
+                        "name": "New York W 32nd St. Station -",
+                        "distance": "",
+                        "distanceInTime": "2 min walk"
+                    },
+                    {
+                        "name": "Penn Station -",
+                        "distance": "",
+                        "distanceInTime": "9 min walk"
+                    },
+                    {
+                        "name": "New York 23rd St. Station -",
+                        "distance": "",
+                        "distanceInTime": "10 min walk"
+                    }
+                ]
+            },
+            {
+                "category": "metro",
+                "locations": [
+                    {
+                        "name": "28 St. Station (Broadway) -",
+                        "distance": "",
+                        "distanceInTime": "4 min walk"
+                    },
+                    {
+                        "name": "34 St. Station (Herald Square) -",
+                        "distance": "",
+                        "distanceInTime": "4 min walk"
+                    },
+                    {
+                        "name": "33 St. Station (Park Av. S) -",
+                        "distance": "",
+                        "distanceInTime": "7 min walk"
+                    }
+                ]
+            }
+        ]
+    },
+    "neighborhood": {
+        "neighborhoodName": "Manhattan"
+    }
+}

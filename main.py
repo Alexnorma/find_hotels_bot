@@ -6,10 +6,22 @@ from telegram_bot_calendar import DetailedTelegramCalendar, LSTEP
 # Создаем экземпляр бота
 token = "5338632260:AAHAnlfUFM-d21iYnMRTmJBolg9Y70hd3Bw"
 bot = telebot.TeleBot(token)
-data_query = [] #данные запроса
+
+data_query = {}#данные запроса
 
 
+def get_suggestions(data_query):
+    suggestions = lowprice.list_hotels_by_destination(data_query)
+    return suggestions
 
+
+# def post_results()->str:
+#
+#     suggestions = get_suggestions(data_query)
+#     for mes in suggestions:
+#          mes = lowprice.get_details(mes, check_in=data_query[3], check_out=data_query[4])
+#     #    bot.send_message(message,mes)
+#     return '123'
 
 
 
@@ -29,6 +41,8 @@ def send_lowprice(message):
 
 def get_city(message):
     list_data = lowprice.get_distination(message.text)
+    #list_data = {'New York': '12345'}
+
     markup_city = types.InlineKeyboardMarkup()
     list_buttons = []
     for item in list_data.keys():
@@ -42,7 +56,8 @@ def get_city(message):
     @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
     def ans(c):
         city = c.data.split(',')[1]
-        data_query.append(f"{city}:{list_data[city]}")
+        data_query['city'] = city
+        data_query['id'] = list_data[city]
         bot.edit_message_text(f"Вы выбрали {city}", c.message.chat.id, c.message.message_id)
         if c.data:
             get_date(message)  # узнаем даты
@@ -54,8 +69,6 @@ def get_date(message):
         bot.send_message(message.chat.id, f"Выберите дату заезда", reply_markup=calendar)
     else:
         bot.send_message(message.chat.id, f"Выберите дату выезда", reply_markup=calendar)
-    if len(data_query) == 3:
-        bot.send_message(message.chat.id, f"Все данные получены", reply_markup=calendar)
 
 
 @bot.callback_query_handler(func=DetailedTelegramCalendar.func())
@@ -86,10 +99,21 @@ def confirmation(cid, cmid, result):
 
     @bot.callback_query_handler(func=lambda c: c.data == "y")
     def ans(c):
-        data_query.append(result)
+        if not 'check_in' in data_query.keys():
+            data_query['check_in'] = result
+        else:
+            data_query['check_out'] = result
         bot.edit_message_text("Дата записана", c.message.chat.id, c.message.message_id)
-        if len(data_query) < 3:
+        if len(data_query) < 4:
             get_date(c.message)
+        if len(data_query) == 4:
+            suggestions = get_suggestions(data_query)
+            print(suggestions)
+            for mes in suggestions:
+
+                mes = lowprice.get_details(mes)
+                bot.send_message(c.message.chat.id, str(mes))
+
 
     @bot.callback_query_handler(func=lambda c: c.data == "n")
     def ansa(c):
