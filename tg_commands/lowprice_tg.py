@@ -1,20 +1,25 @@
 import requests
 from telebot import types
-from tg_commands import lowprice_site
+from tg_commands import site_functions
 from telegram_bot_calendar import DetailedTelegramCalendar
+from loguru import logger
 #данные запроса
 data_query = {}
 
 
 # Функция, обрабатывающая команду /lowprice
+@logger.catch()
 def send_lowprice(message, bot):
+    logger.info('Запуск команды lowprice')
     bot.send_message(message.from_user.id, "Введите город для поиска предложений:")
     bot.register_next_step_handler(message, get_city, bot)
 
 
 def get_city(message, bot):
-    list_data = lowprice_site.get_distination(message.text)
-    # list_data = {'New York': '12345'}
+    logger.info('Получение расположения')
+    list_data = site_functions.get_distination(message.text)
+    logger.info('Получили список мест для уточнения')
+    #list_data = {'New York': '12345'}
 
     markup_city = types.InlineKeyboardMarkup()
     list_buttons = []
@@ -28,6 +33,7 @@ def get_city(message, bot):
 
     @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
     def ans(c):
+        logger.info('Добавляем город в запрос для поиска')
         city = c.data.split(',')[1]
         data_query['city'] = city
         data_query['id'] = list_data[city]
@@ -35,10 +41,10 @@ def get_city(message, bot):
         if c.data:
             get_date(message, bot)  # узнаем даты
 
+
 # ввод даты
-
-
 def get_date(message, bot):
+    logger.info('Выбирается дата')
     calendar, step = DetailedTelegramCalendar(locale='ru').build()
     if len(data_query) < 2:
         bot.send_message(message.chat.id, "Выберите дату заезда", reply_markup=calendar)
@@ -74,15 +80,15 @@ def confirmation(cid, cmid, result, bot):
     def ans(c):
         if not 'check_in' in data_query.keys():
             data_query['check_in'] = result
+            logger.info('Дата въезда добавлена')
         else:
             data_query['check_out'] = result
+            logger.info('Дата выезда добавлена')
         bot.edit_message_text("Дата записана", c.message.chat.id, c.message.message_id)
         if len(data_query) < 4:
             get_date(c.message, bot)
         if len(data_query) == 4:
             number_of_photos(c, bot)
-
-
 
 
     @bot.callback_query_handler(func=lambda c: c.data == "n")
@@ -99,28 +105,57 @@ def number_of_photos(c, bot):
     five = types.KeyboardButton(text='5')
     markup.row(one, three, five)
     bot.send_message(c.message.chat.id, "Сколько фото показывать?", reply_markup=markup)
+    logger.info('Ввод количества показываемых в запросе фото ')
     bot.register_next_step_handler(c.message, get_photos, bot)
 
 
 def get_photos(message, bot):
 
     data_query['count_photos'] = message.text
-
     bot.send_message(message.chat.id,'записано')
-    get_suggestions(message.chat.id, bot, data_query)
+    get_num_hotels(message, bot)
+
+
+
+# получение количества отелей для показа
+def get_num_hotels(message, bot):
+    logger.info('Получение количества отелей для показа ')
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    b_1 = types.KeyboardButton(text='5')
+    b_2 = types.KeyboardButton(text='7')
+    b_3 = types.KeyboardButton(text='10')
+    b_4 = types.KeyboardButton(text='15')
+    b_5 = types.KeyboardButton(text='20')
+    b_6 = types.KeyboardButton(text='25')
+    markup.row(b_1,b_2,b_3,b_4,b_5,b_6)
+    bot.send_message(message.chat.id, "Сколько отелей показывать при выводе?(не более 25)", reply_markup=markup)
+    bot.register_next_step_handler(message, get_suggestions, bot, data_query)
+
 
 
 def get_suggestions(message, bot, data_query):
-    suggestions = lowprice_site.list_hotels_by_destination(data_query)
+    num_hotels = message.text
+    if not 0 < int(message.text) <= 25:
+        bot.send_message(message.chat.id, f"Вы ввели число {num_hotels},введите число не более 25")
+        get_num_hotels(message, bot)
+    data_query['sortOrder'] = 'PRICE'
+    data_query
+    suggestions = site_functions.list_hotels_by_destination(data_query)
     list_photos = []
-    for k in suggestions:
-        detail = lowprice_site.get_details(k)
-        res = lowprice_site.process_photos(k, data_query['count_photos'])
+    logger.info('Отправка подобранных вариантов в чат')
+    for k in range(0, int(num_hotels)):
+        if k > len(suggestions)-1:
+            bot.send_message(message.chat.id, "Показаны все найденные результаты")
+            break
+        detail = site_functions.get_details(suggestions[k], data_query['check_in'], data_query['check_out'])
+        res = site_functions.process_photos(suggestions[k], data_query['count_photos'])
         for i in res:
             list_photos.append(types.InputMediaPhoto(i))
         list_photos[0].caption = detail
-        bot.send_media_group(message, list_photos)
+        bot.send_media_group(message.chat.id, list_photos)
         list_photos.clear()
+
+
 
 
 
