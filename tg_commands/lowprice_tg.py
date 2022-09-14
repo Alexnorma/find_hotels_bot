@@ -3,6 +3,7 @@ from telebot import types
 from tg_commands import site_functions
 from telegram_bot_calendar import DetailedTelegramCalendar
 from loguru import logger
+from database import database
 #данные запроса
 data_query = {}
 
@@ -11,6 +12,8 @@ data_query = {}
 @logger.catch()
 def send_lowprice(message, bot):
     logger.info('Запуск команды lowprice')
+    data_query['user_id'] = message.from_user.id
+    data_query['command'] = message.text
     bot.send_message(message.from_user.id, "Введите город для поиска предложений:")
     bot.register_next_step_handler(message, get_city, bot)
 
@@ -46,7 +49,7 @@ def get_city(message, bot):
 def get_date(message, bot):
     logger.info('Выбирается дата')
     calendar, step = DetailedTelegramCalendar(locale='ru').build()
-    if len(data_query) < 2:
+    if len(data_query) < 4:
         bot.send_message(message.chat.id, "Выберите дату заезда", reply_markup=calendar)
     else:
         bot.send_message(message.chat.id, "Выберите дату выезда", reply_markup=calendar)
@@ -85,9 +88,9 @@ def confirmation(cid, cmid, result, bot):
             data_query['check_out'] = result
             logger.info('Дата выезда добавлена')
         bot.edit_message_text("Дата записана", c.message.chat.id, c.message.message_id)
-        if len(data_query) < 4:
+        if len(data_query) < 6:
             get_date(c.message, bot)
-        if len(data_query) == 4:
+        if len(data_query) == 6:
             number_of_photos(c, bot)
 
 
@@ -139,15 +142,21 @@ def get_suggestions(message, bot, data_query):
         bot.send_message(message.chat.id, f"Вы ввели число {num_hotels},введите число не более 25")
         get_num_hotels(message, bot)
     data_query['sortOrder'] = 'PRICE'
-    data_query
-    suggestions = site_functions.list_hotels_by_destination(data_query)
+    data_query['distance'] = '1000'
+    suggestions, distance = site_functions.list_hotels_by_destination(data_query)
     list_photos = []
+    with database.db:
+        database.db.create_tables([database.db.Users])
+        logger.info('Таблица создана')
+    database.add_query(data_query)
+
     logger.info('Отправка подобранных вариантов в чат')
     for k in range(0, int(num_hotels)):
         if k > len(suggestions)-1:
             bot.send_message(message.chat.id, "Показаны все найденные результаты")
             break
-        detail = site_functions.get_details(suggestions[k], data_query['check_in'], data_query['check_out'])
+        detail = site_functions.get_details(suggestions[k], data_query['check_in'], data_query['check_out']
+                                            , distance)
         res = site_functions.process_photos(suggestions[k], data_query['count_photos'])
         for i in res:
             list_photos.append(types.InputMediaPhoto(i))

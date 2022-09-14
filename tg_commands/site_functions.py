@@ -58,17 +58,28 @@ def get_distination(city: str) -> dict:
 
 
 #получение списка ид для получения подробной информации об отеле
-def need_result(result) -> list:
+def need_result(result, data_query) -> tuple:
 	logger.info('Получение списка ИД для запроса более подробной информации')
 	res = find_dict_key(result, 'results')
+	print(res)
 	list_results = []
+	if 'distance' not in data_query.keys():
+		for k in res:
+			list_results.append(k['id'])
 	for k in res:
-		list_results.append(k['id'])
-	return list_results
+		test_id, distance = test_distance(k, data_query)
+		list_results.append(test_id)
+	return list_results, distance
+
+
+def test_distance(k, data_query):
+	distance = k['landmarks'][0]['distance']
+	if distance <= data_query['distance']:
+		return k['id'], distance
 
 
 #получение детализации предложений для бронирования
-def get_details(id,check_in,check_out):
+def get_details(id,check_in,check_out,distance):
 	logger.info(f'Получение информации о номере c ИД {id}')
 	url = "https://hotels4.p.rapidapi.com/properties/get-details"
 	querystring = {"id": id, "checkIn": check_in, "checkOut": check_out, "adults1": "1", "currency": "USD",
@@ -80,19 +91,19 @@ def get_details(id,check_in,check_out):
 	}
 	response = requests.request("GET", url, headers=headers, params=querystring)
 	result = json.loads(response.text)
-	mes_to_tg =	post_to_tg(result)
+	mes_to_tg =	post_to_tg(result, distance)
 	return mes_to_tg
 
 
-def post_to_tg(response) -> str:
+def post_to_tg(response, distance) -> str:
 	logger.info('Обработка полученных данных о номере')
 	suggestion = dict()
 	text = ''
 	suggestion['Название отеля'] = find_dict_key(response, 'name')
 	suggestion['Рейтинг'] = find_dict_key(response, 'starRating')
 	suggestion['Адрес'] = find_dict_key(response, 'addressLine1')
+	suggestion['Расстояние от центра'] = distance
 	suggestion['Cтоимость за ночь'] = find_dict_key(response, 'formatted')
-
 	suggestion['Общая стоимость'] = find_dict_key(response, 'fullyBundledPricePerStay')
 	if suggestion['Общая стоимость'] is not None:
 		suggestion['Общая стоимость'] = suggestion['Общая стоимость'].split(' ')[1]
@@ -101,6 +112,7 @@ def post_to_tg(response) -> str:
 	for key, val in suggestion.items():
 		text += f"{str(key)}: {str(val)}\n"
 	return text
+
 
 #функция поиска по словарю
 def find_dict_key(name_of_dict: dict, key: str) -> [str, dict]:
@@ -123,7 +135,7 @@ def list_hotels_by_destination(data_query: dict):
 	check_out = data_query['check_out']
 	url = "https://hotels4.p.rapidapi.com/properties/list"
 	querystring = {"destinationId": destination_id, "pageNumber": "1"
-		, "pageSize": "2", "checkIn": check_in, "checkOut": check_out, "adults1": "1"
+		, "pageSize": "4", "checkIn": check_in, "checkOut": check_out, "adults1": "1"
 		, "sortOrder": data_query['sortOrder']
 		, "locale": "en_US", "currency": "USD"}
 	if 'start_price' in data_query.keys():
@@ -136,8 +148,6 @@ def list_hotels_by_destination(data_query: dict):
 	}
 	response = requests.request("GET", url, headers=headers, params=querystring)
 	result = json.loads(response.text)
+	list_hotels, distance = need_result(result, data_query)
 
-
-	list_hotels = need_result(result)
-
-	return list_hotels
+	return list_hotels, distance
