@@ -1,7 +1,4 @@
-import telebot #telebot
-
-from telebot import custom_filters
-from telebot.handler_backends import State, StatesGroup #States
+from telebot.handler_backends import State, StatesGroup
 
 
 # States group.
@@ -13,5 +10,3 @@ class MyStates(StatesGroup):
     count_photos = State()
     count_hotels = State()
     parametrs = State()
-
-

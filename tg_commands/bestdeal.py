@@ -18,18 +18,22 @@ def send_bestdeal(message):
         data['user_id'] = message.from_user.id
         data['command'] = message.text
     bot.set_state(message.from_user.id, MyStates.city, message.chat.id)
-    bot.send_message(message.from_user.id, "Введите город для поиска предложений:")
+    bot.send_message(message.from_user.id,
+                     "Введите город для поиска предложений:")
     bot.register_next_step_handler(message, get_city)
+
 
 @bot.message_handler(state=MyStates.city)
 def get_city(message):
     destinations = keyboards.inline.city_markup(message.text)
     if destinations:
+        # Отправляем кнопки с вариантами
         bot.send_message(message.from_user.id, 'Уточните, пожалуйста:',
-                         reply_markup=destinations)  # Отправляем кнопки с вариантами
+                         reply_markup=destinations)
     else:
         logger.info('Нет такого города')
-        bot.send_message(message.from_user.id, "Нет такого города,введите ещё раз:")
+        bot.send_message(message.from_user.id,
+                         "Нет такого города,введите ещё раз:")
         send_bestdeal(message)
 
     @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
@@ -42,11 +46,10 @@ def get_city(message):
             data['city'] = city
             data['city_id'] = city_id
             logger.info(data.keys())
-        bot.edit_message_text(f"Вы выбрали {city}", c.message.chat.id, c.message.message_id)
+        bot.edit_message_text(f"Вы выбрали {city}",
+                              c.message.chat.id, c.message.message_id)
         if c.data:
             calend.get_date(message)
-
-
 
 
 # ввод диапазона цен(начальная цена)
@@ -54,12 +57,15 @@ def get_city(message):
 def start_price(message):
     num_hotels = message.text
     if not 0 < int(message.text) <= 25:
-        bot.send_message(message.chat.id, f"Вы ввели число {num_hotels},введите число не более 25")
+        bot.send_message(
+            message.chat.id,
+            f"Вы ввели число {num_hotels},введите число не более 25")
         get_hotels.get_num_hotels(message)
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['count_hotels'] = num_hotels
     logger.info('Ввод начальной цены')
-    bot.send_message(message.chat.id, "начальная цена?", reply_markup=keyboards.inline.start_price_buttons())
+    bot.send_message(message.chat.id, "начальная цена?",
+                     reply_markup=keyboards.inline.start_price_buttons())
     bot.register_next_step_handler(message, end_price)
 
 
@@ -69,7 +75,8 @@ def end_price(message):
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['start_price'] = message.text
 
-    bot.send_message(message.chat.id, "конечная цена?", reply_markup=keyboards.inline.end_price_buttons())
+    bot.send_message(message.chat.id, "конечная цена?",
+                     reply_markup=keyboards.inline.end_price_buttons())
     bot.register_next_step_handler(message, dist_center)
 
 
@@ -87,7 +94,9 @@ def dist_center(message):
 def get_suggestions(message):
     distance = message.text
     if not 0 < int(message.text) <= 1000:
-        bot.send_message(message.chat.id, f"Вы ввели число {num_hotels},введите число не более 1000")
+        bot.send_message(
+            message.chat.id,
+            f"Вы ввели число {distance},введите число от 0 до 1000")
         dist_center(message)
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['sortOrder'] = 'DISTANCE'
@@ -102,37 +111,19 @@ def get_suggestions(message):
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         for k in range(0, int(data['count_hotels'])):
             if k > len(suggestions) - 1:
-                bot.send_message(message.chat.id, "Показаны все найденные результаты")
+                bot.send_message(message.chat.id,
+                                 "Показаны все найденные результаты")
                 break
             else:
                 database.add_query(suggestions[k], distances[k], data)
-                detail = site_functions.get_details(suggestions[k], data['check_in'], data['check_out'], distances[k])
-                res = site_functions.process_photos(suggestions[k], data['count_photos'])
+                detail = site_functions.get_details(
+                    suggestions[k], data['check_in'],
+                    data['check_out'], distances[k])
+                res = site_functions.process_photos(
+                    suggestions[k], data['count_photos'])
                 for i in res:
                     list_photos.append(types.InputMediaPhoto(i))
                 list_photos[0].caption = detail
                 bot.send_media_group(message.chat.id, list_photos)
                 logger.info('Результат отправлен в чат')
                 list_photos.clear()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

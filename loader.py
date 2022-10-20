@@ -6,5 +6,3 @@ storage = StateMemoryStorage()
 bot = TeleBot(token=config.token, state_storage=storage)
 api_key = config.api_key
 api_host = "hotels4.p.rapidapi.com"
-
-
