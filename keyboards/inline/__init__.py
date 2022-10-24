@@ -3,7 +3,7 @@ from telebot import types
 from base_functions import site_functions
 
 
-def city_markup(message):
+def city_markup_buttons(message):
     logger.info('Получение расположения')
     cities = site_functions.get_distination(message)
     logger.info('Получили список мест для уточнения')

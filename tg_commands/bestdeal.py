@@ -5,18 +5,18 @@ from database import database
 from fuctions_calendar import calend
 from base_functions import get_hotels
 from keyboards import inline
-from loader import bot
+from loader import bot, sticker_id
 from states import MyStates
 
 
 # Функция, обрабатывающая команду /bestdeal
-@logger.catch()
 @bot.message_handler(state=MyStates.user)
 def send_bestdeal(message):
-    logger.info('Запуск команды lowprice')
+    logger.info('Запуск команды bestdeal')
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['user_id'] = message.from_user.id
         data['command'] = message.text
+    logger.info('Добавлены user_id и command в data пользователя ')
     bot.set_state(message.from_user.id, MyStates.city, message.chat.id)
     bot.send_message(message.from_user.id,
                      "Введите город для поиска предложений:")
@@ -25,38 +25,46 @@ def send_bestdeal(message):
 
 @bot.message_handler(state=MyStates.city)
 def get_city(message):
-    destinations = inline.city_markup(message.text)
+    logger.info('Получение названий для кнопок выбора ')
+    destinations = inline.city_markup_buttons(message.text)
     if destinations:
-        # Отправляем кнопки с вариантами
-        bot.send_message(message.from_user.id, 'Уточните, пожалуйста:',
+        logger.info('Названия получены ')
+        bot.send_message(message.from_user.id,
+                         'Уточните, пожалуйста:',
                          reply_markup=destinations)
+        logger.info('Отправили кнопки в чат ')
+    # Отправляем кнопки с вариантами
     else:
         logger.info('Нет такого города')
         bot.send_message(message.from_user.id,
                          "Нет такого города,введите ещё раз:")
         send_bestdeal(message)
 
+
 @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
-def ans(c):
-    logger.info(f'c data {c}')
+def callback_name_of_city(callback_message):
+    logger.info('пользователь уточнил название')
     logger.info('Добавляем город в запрос для поиска')
-    city = c.data.split(',')[1]
-    city_id = c.data.split(',')[2]
+    city = callback_message.data.split(',')[1]
+    city_id = callback_message.data.split(',')[2]
     logger.info('получили ид и город')
-    with bot.retrieve_data(c.from_user.id, c.message.chat.id) as data:
+    with bot.retrieve_data(
+            callback_message.from_user.id,
+            callback_message.message.chat.id) as data:
         data['city'] = city
         data['city_id'] = city_id
-        logger.info(data.keys())
+        logger.info('Добавлены city и city_id в data пользователя ')
     bot.edit_message_text(
         f"Вы выбрали {city}",
-        c.message.chat.id, c.message.message_id)
-    if c.data:
-        calend.get_date(c)
+        callback_message.message.chat.id,
+        callback_message.message.message_id)
+    if callback_message.data:
+        calend.get_date(callback_message)
 
 
 # ввод диапазона цен(начальная цена)
 @bot.message_handler(state=MyStates.count_hotels)
-def start_price(message):
+def start_of_price(message):
     num_hotels = message.text
     if not 0 < int(message.text) <= 25:
         bot.send_message(
@@ -68,22 +76,22 @@ def start_price(message):
     logger.info('Ввод начальной цены')
     bot.send_message(message.chat.id, "начальная цена?",
                      reply_markup=inline.start_price_buttons())
-    bot.register_next_step_handler(message, end_price)
+    bot.register_next_step_handler(message, end_of_price)
 
 
 # ввод диапазона цен(конечная цена)
-def end_price(message):
+def end_of_price(message):
     logger.info('Ввод конечной цены')
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['start_price'] = message.text
 
     bot.send_message(message.chat.id, "конечная цена?",
                      reply_markup=inline.end_price_buttons())
-    bot.register_next_step_handler(message, dist_center)
+    bot.register_next_step_handler(message, dist_from_center)
 
 
 # ввод расстояния от центра
-def dist_center(message):
+def dist_from_center(message):
     logger.info('Ввод расстояния от центра')
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['end_price'] = message.text
@@ -99,17 +107,17 @@ def get_suggestions(message):
         bot.send_message(
             message.chat.id,
             f"Вы ввели число {distance},введите число от 0 до 1000")
-        dist_center(message)
+        dist_from_center(message)
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['sortOrder'] = 'DISTANCE'
         data['distance'] = distance
-    logger.info(data.keys())
-    logger.info(data.items())
+    stiker = bot.send_sticker(message.chat.id, sticker=sticker_id)
+    logger.info('Добавлены sortOrder, distance в data пользователя')
     suggestions, distances = site_functions.list_hotels_by_destination(message)
-    logger.info(f'suggestions {suggestions}')
-    logger.info(f'distance {distances}')
+    logger.info('suggestions n distance получили')
     list_photos = []
     logger.info('Отправка подобранных вариантов в чат')
+    bot.delete_message(message.chat.id, stiker.message_id)
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         for k in range(0, int(data['count_hotels'])):
             if k > len(suggestions) - 1:

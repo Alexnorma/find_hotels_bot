@@ -1,4 +1,4 @@
-from tg_commands import lowprice_tg, highprice_tg, history, bestdeal
+from tg_commands import lowprice_tg, highprice_tg, history, bestdeal,welcome
 from loader import bot
 from states import MyStates
 
@@ -15,4 +15,4 @@ def commands_listener(command):
     elif command.text == '/history':
         history.send_history(command)
     elif command.text == '/helloworld':
-        highprice_tg.send_welcome(command)
+        welcome.send_welcome(command)

@@ -6,17 +6,18 @@ from database import database
 from fuctions_calendar import calend
 from base_functions import get_hotels
 from keyboards import inline
-from loader import bot
+from loader import bot, sticker_id
 from states import MyStates
 
 
-# Функция, обрабатывающая команду /lowprice
+# Функция, обрабатывающая команду /send_highprice
 @logger.catch()
 def send_highprice(message):
-    logger.info('Запуск команды lowprice')
+    logger.info('Запуск команды send_highprice')
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         data['user_id'] = message.from_user.id
         data['command'] = message.text
+    logger.info('Добавлены user_id и command в data пользователя ')
     bot.set_state(message.from_user.id, MyStates.city, message.chat.id)
     bot.send_message(message.from_user.id,
                      "Введите город для поиска предложений:")
@@ -25,35 +26,41 @@ def send_highprice(message):
 
 @bot.message_handler(state=MyStates.city)
 def get_city(message):
-    destinations = inline.city_markup(message.text)
+    logger.info('Получение названий для кнопок выбора ')
+    destinations = inline.city_markup_buttons(message.text)
     if destinations:
-        # Отправляем кнопки с вариантами
-        bot.send_message(message.from_user.id, 'Уточните, пожалуйста:',
+        logger.info('Названия получены ')
+        bot.send_message(message.from_user.id,
+                         'Уточните, пожалуйста:',
                          reply_markup=destinations)
+        logger.info('Отправили кнопки в чат ')
+    # Отправляем кнопки с вариантами
     else:
         logger.info('Нет такого города')
         bot.send_message(message.from_user.id,
                          "Нет такого города,введите ещё раз:")
         send_highprice(message)
-        bot.send_sticker()
 
 
 @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
-def ans(c):
-    logger.info(f'c data {c}')
+def callback_name_of_city(callback_message):
+    logger.info('пользователь уточнил название')
     logger.info('Добавляем город в запрос для поиска')
-    city = c.data.split(',')[1]
-    city_id = c.data.split(',')[2]
+    city = callback_message.data.split(',')[1]
+    city_id = callback_message.data.split(',')[2]
     logger.info('получили ид и город')
-    with bot.retrieve_data(c.from_user.id, c.message.chat.id) as data:
+    with bot.retrieve_data(
+            callback_message.from_user.id,
+            callback_message.message.chat.id) as data:
         data['city'] = city
         data['city_id'] = city_id
-        logger.info(data.keys())
+        logger.info('Добавлены city и city_id в data пользователя ')
     bot.edit_message_text(
         f"Вы выбрали {city}",
-        c.message.chat.id, c.message.message_id)
-    if c.data:
-        calend.get_date(c)
+        callback_message.message.chat.id,
+        callback_message.message.message_id)
+    if callback_message.data:
+        calend.get_date(callback_message)
 
 
 @bot.message_handler(state=MyStates.count_hotels)
@@ -68,13 +75,13 @@ def get_suggestions(message):
         data['sortOrder'] = 'PRICE_HIGHEST_FIRST'
         data['distance'] = '1000'
         data['count_hotels'] = num_hotels
-        logger.info(data.keys())
-        logger.info(data.items())
+        logger.info('Добавлены sortOrder, distance, count_hotels в data пользователя')
+    stiker = bot.send_sticker(message.chat.id, sticker=sticker_id)
     suggestions, distances = site_functions.list_hotels_by_destination(message)
-    logger.info(f'suggestions {suggestions}')
-    logger.info(f'distance {distances}')
+    logger.info('suggestions n distance получили')
     list_photos = []
     logger.info('Отправка подобранных вариантов в чат')
+    bot.delete_message(message.chat.id, stiker.message_id)
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         for k in range(0, int(num_hotels)):
             if k > len(suggestions) - 1:
@@ -96,7 +103,4 @@ def get_suggestions(message):
                 list_photos.clear()
 
 
-# Функция, обрабатывающая команду /hello-world
-def send_welcome(message, bot):
-    bot.reply_to(message,
-                 'Это первое сообщение бота в ответ на команду hello_world ')
+

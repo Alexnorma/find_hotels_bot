@@ -18,4 +18,4 @@ def get_num_hotels(message):
             bot.register_next_step_handler(
                 message, lowprice_tg.get_suggestions)
         elif data['command'] == '/bestdeal':
-            bot.register_next_step_handler(message, bestdeal.start_price)
+            bot.register_next_step_handler(message, bestdeal.start_of_price)
