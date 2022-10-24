@@ -5,7 +5,7 @@ from database import database
 from fuctions_calendar import calend
 from base_functions import get_hotels
 from keyboards import inline
-from loader import bot
+from loader import bot, sticker_id
 from states import MyStates
 
 
@@ -18,6 +18,7 @@ def send_lowprice(message):
         data['user_id'] = message.from_user.id
         data['command'] = message.text
     bot.set_state(message.from_user.id, MyStates.city, message.chat.id)
+
     bot.send_message(message.from_user.id,
                      "Введите город для поиска предложений:")
     bot.register_next_step_handler(message, get_city)
@@ -25,7 +26,9 @@ def send_lowprice(message):
 
 @bot.message_handler(state=MyStates.city)
 def get_city(message):
+
     destinations = inline.city_markup(message.text)
+
     if destinations:
         bot.send_message(message.from_user.id,
                          'Уточните, пожалуйста:',
@@ -37,21 +40,23 @@ def get_city(message):
                          "Нет такого города,введите ещё раз:")
         send_lowprice(message)
 
-    @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
-    def ans(c):
-        logger.info('Добавляем город в запрос для поиска')
-        city = c.data.split(',')[1]
-        city_id = c.data.split(',')[2]
-        logger.info('получили ид и город')
-        with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
-            data['city'] = city
-            data['city_id'] = city_id
-            logger.info(data.keys())
-        bot.edit_message_text(
-            f"Вы выбрали {city}",
-            c.message.chat.id, c.message.message_id)
-        if c.data:
-            calend.get_date(message)
+
+@bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
+def ans(c):
+    logger.info(f'c data {c}')
+    logger.info('Добавляем город в запрос для поиска')
+    city = c.data.split(',')[1]
+    city_id = c.data.split(',')[2]
+    logger.info('получили ид и город')
+    with bot.retrieve_data(c.from_user.id, c.message.chat.id) as data:
+        data['city'] = city
+        data['city_id'] = city_id
+        logger.info(data.keys())
+    bot.edit_message_text(
+        f"Вы выбрали {city}",
+        c.message.chat.id, c.message.message_id)
+    if c.data:
+        calend.get_date(c)
 
 
 @bot.message_handler(state=MyStates.count_hotels)
@@ -66,13 +71,16 @@ def get_suggestions(message):
         data['sortOrder'] = 'PRICE'
         data['distance'] = '1000'
         data['count_hotels'] = num_hotels
+
         logger.info(data.keys())
         logger.info(data.items())
+    stik = bot.send_sticker(message.chat.id, sticker=sticker_id)
     suggestions, distances = site_functions.list_hotels_by_destination(message)
     logger.info(f'suggestions {suggestions}')
     logger.info(f'distance {distances}')
     list_photos = []
     logger.info('Отправка подобранных вариантов в чат')
+    bot.delete_message(message.chat.id, stik.message_id)
     with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
         for k in range(0, int(num_hotels)):
             if k > len(suggestions)-1:

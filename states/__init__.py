@@ -10,3 +10,4 @@ class MyStates(StatesGroup):
     count_photos = State()
     count_hotels = State()
     parametrs = State()
+    a = State()

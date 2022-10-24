@@ -5,7 +5,7 @@ from base_functions import site_functions
 from database import database
 from fuctions_calendar import calend
 from base_functions import get_hotels
-import keyboards
+from keyboards import inline
 from loader import bot
 from states import MyStates
 
@@ -25,7 +25,7 @@ def send_highprice(message):
 
 @bot.message_handler(state=MyStates.city)
 def get_city(message):
-    destinations = keyboards.inline.city_markup(message.text)
+    destinations = inline.city_markup(message.text)
     if destinations:
         # Отправляем кнопки с вариантами
         bot.send_message(message.from_user.id, 'Уточните, пожалуйста:',
@@ -35,22 +35,25 @@ def get_city(message):
         bot.send_message(message.from_user.id,
                          "Нет такого города,введите ещё раз:")
         send_highprice(message)
+        bot.send_sticker()
 
-    @bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
-    def ans(c):
-        logger.info('Добавляем город в запрос для поиска')
-        city = c.data.split(',')[1]
-        city_id = c.data.split(',')[2]
-        logger.info('получили ид и город')
-        with bot.retrieve_data(message.from_user.id, message.chat.id) as data:
-            data['city'] = city
-            data['city_id'] = city_id
-            logger.info(data.keys())
-        bot.edit_message_text(f"Вы выбрали {city}",
-                              c.message.chat.id, c.message.message_id)
-        if c.data:
-            # ввод даты
-            calend.get_date(message)
+
+@bot.callback_query_handler(func=lambda c: c.data.startswith("city"))
+def ans(c):
+    logger.info(f'c data {c}')
+    logger.info('Добавляем город в запрос для поиска')
+    city = c.data.split(',')[1]
+    city_id = c.data.split(',')[2]
+    logger.info('получили ид и город')
+    with bot.retrieve_data(c.from_user.id, c.message.chat.id) as data:
+        data['city'] = city
+        data['city_id'] = city_id
+        logger.info(data.keys())
+    bot.edit_message_text(
+        f"Вы выбрали {city}",
+        c.message.chat.id, c.message.message_id)
+    if c.data:
+        calend.get_date(c)
 
 
 @bot.message_handler(state=MyStates.count_hotels)
