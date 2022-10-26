@@ -3,7 +3,7 @@ from telebot import types
 from base_functions import site_functions
 
 
-def city_markup(message):
+def city_markup_buttons(message):
     logger.info('Получение расположения')
     cities = site_functions.get_distination(message)
     logger.info('Получили список мест для уточнения')
@@ -14,8 +14,9 @@ def city_markup(message):
         return destinations
     else:
         for city in cities.keys():
-            destinations.add(types.InlineKeyboardButton(text=f'{city}',
-                                                        callback_data=f'city,{city},{cities[city]}'))
+            destinations.add(
+                types.InlineKeyboardButton(
+                    text=f'{city}', callback_data=f'city,{city},{cities[city]}'))
         return destinations
 
 
@@ -57,6 +58,8 @@ def start_price_buttons():
     b_4 = types.KeyboardButton(text='300')
     markup.row(b_1, b_2, b_3, b_4)
     return markup
+
+
 def end_price_buttons():
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
     b_1 = types.KeyboardButton(text='1000')
@@ -65,6 +68,3 @@ def end_price_buttons():
     b_4 = types.KeyboardButton(text='10000')
     markup.row(b_1, b_2, b_3, b_4)
     return markup
-
-
-

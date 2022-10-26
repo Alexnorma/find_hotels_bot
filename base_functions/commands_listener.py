@@ -1,6 +1,7 @@
-from tg_commands import lowprice_tg, highprice_tg, history, bestdeal
+from tg_commands import lowprice_tg, highprice_tg, history, bestdeal, help
 from loader import bot
 from states import MyStates
+
 
 # Функция, обрабатывающая команду /highprice
 def commands_listener(command):
@@ -13,6 +14,5 @@ def commands_listener(command):
         bestdeal.send_bestdeal(command)
     elif command.text == '/history':
         history.send_history(command)
-    elif command.text == '/helloworld':
-        highprice_tg.send_welcome(command)
-
+    elif command.text == '/help':
+        help.send_help(command)

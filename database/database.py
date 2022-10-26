@@ -1,15 +1,13 @@
-from peewee import *
+from peewee import TextField, FloatField, \
+    DateField, Model, TimeField, SqliteDatabase
 from loguru import logger
 from datetime import datetime
-from loader import bot
+
+db = SqliteDatabase('database/history.db')
 
 
-db = SqliteDatabase('database\history.db')
-
-
-#таблица пользователей
+# таблица пользователей
 class Users(Model):
-
     user_id = TextField()
     date = DateField()
     time = TimeField()
@@ -49,14 +47,15 @@ def add_query(suggestion, distance, data):
     logger.info(data['check_out'])
     logger.info(suggestion)
     logger.info(distance)
-    new_user = Users.create(user_id=data['user_id'], date=datetime.now().date(), time=datetime.now().time(),
-                            command=data['command'], city=data['city'], check_in=data['check_in'],
-                            check_out=data['check_out'], suggestion=suggestion, distance=distance,
-                            count_photos=data['count_photos'], count_hotels=data['count_hotels'])
+    new_user = Users.create(
+        user_id=data['user_id'], date=datetime.now().date(), time=datetime.now().time(),
+        command=data['command'], city=data['city'], check_in=data['check_in'],
+        check_out=data['check_out'], suggestion=suggestion, distance=distance,
+        count_photos=data['count_photos'], count_hotels=data['count_hotels'])
     return new_user
 
 
-#получения истории пользователя
+# получения истории пользователя
 def get_history(id):
     logger.info('Запрос из базы данных')
     list_queries = []
@@ -78,19 +77,3 @@ def get_history(id):
         list_queries.append(list_data)
         logger.info('Сформирован словарь c атрибутами ответа на запрос')
     return list_queries
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
